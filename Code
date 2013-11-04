@@ -1,0 +1,30 @@
+
+package com.kiani.second.insertfont;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.graphics.Typeface;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+        Typeface koodak = Typeface.createFromAsset(getAssets(), "Fonts/koodak.ttf");
+        
+        // ساختن یک آبجکت از روی تکست ویو و نسبت دادن فونت به آن
+        // bind the "hello_world" textview with chosen font
+        TextView txt = (TextView) findViewById(R.id.hello_world);
+        txt.setTypeface(koodak);
+        
+        // ساختن یک آبجکت از روی دکمه و نسبت دادن فونت به آن
+        // bind the "button1" button with chosen font
+        Button btn = (Button) findViewById(R.id.button1);
+        btn.setTypeface(koodak);
+	}
+
+}
