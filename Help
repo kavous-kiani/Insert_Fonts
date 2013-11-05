@@ -1,4 +1,3 @@
-
 در اندروید سه نوع فونت موجود است
 
 serif
@@ -43,4 +42,5 @@ createFromAsset()
 myTextView.setTypeface(myTypeface);
 
 ...
+
 
